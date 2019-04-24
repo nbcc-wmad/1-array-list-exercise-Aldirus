@@ -45,6 +45,7 @@
             this.btnShowMsg.TabIndex = 0;
             this.btnShowMsg.Text = "Display Message";
             this.btnShowMsg.UseVisualStyleBackColor = true;
+            this.btnShowMsg.Click += new System.EventHandler(this.btnShowMsg_Click);
             // 
             // btnReverse
             // 
@@ -55,6 +56,7 @@
             this.btnReverse.TabIndex = 1;
             this.btnReverse.Text = "Display Message In Reverse";
             this.btnReverse.UseVisualStyleBackColor = true;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
             // lblMessage
             // 
@@ -80,6 +82,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add to Second Position";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button1
             // 
@@ -104,6 +107,7 @@
             this.Controls.Add(this.btnShowMsg);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
