@@ -70,17 +70,41 @@ namespace ArrayListSimpleEx
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
            if(revmsg == true)
            {
                 MessageBox.Show("Cannot insert in reverse");
-
+                ReverseMessage();
            }
            else
            {
                 msg.Insert(1, txtSecondPos.Text);
+                DisplayMessage(msg);
            }
 
-            DisplayMessage(msg);
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(msg.Count > 5)
+            {
+              msg.RemoveAt(1);
+
+              if(revmsg== true)
+              {   
+                ReverseMessage();
+              }
+              else
+              {
+                DisplayMessage(msg);
+              }
+  
+            }
+            else
+            {
+                MessageBox.Show("No Message to remove");
+            }
         }
     }
 }
